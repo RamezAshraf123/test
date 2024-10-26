@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ByTabActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chapter1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#ff0000ff"
+        android:elevation="10dp"
+        android:padding="0dp"
+        android:text="Chapter 1"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/chapter2_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chapter2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:backgroundTint="#4D4D4D"
+        android:elevation="10dp"
+        android:padding="0dp"
+        android:text="Chapter 2"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@id/chapter3_btn"
+        app:layout_constraintStart_toEndOf="@id/chapter1_btn"
+        app:layout_constraintTop_toTopOf="@id/chapter1_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chapter3_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:backgroundTint="#4D4D4D"
+        android:elevation="10dp"
+        android:padding="0dp"
+        android:text="Chapter 3"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@id/chapter4_btn"
+        app:layout_constraintStart_toEndOf="@id/chapter2_btn"
+        app:layout_constraintTop_toTopOf="@id/chapter2_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chapter4_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:backgroundTint="#4D4D4D"
+        android:elevation="10dp"
+        android:padding="0dp"
+        android:text="Chapter 4"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chapter3_btn"
+        app:layout_constraintTop_toTopOf="@id/chapter3_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
